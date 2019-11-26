@@ -1,0 +1,253 @@
+@mixin link_hover
+	&:hover
+		text-decoration: none
+		color: #F6F505
+
+$color_white: #ffffff
+$color_cherry: #8F1D41
+$color_plum: rgba(101,0,100, 0.7)
+$color_logo: #E21989		
+.title
+	margin: 0 auto
+	margin-top: 26px
+	font-size: 39px
+	text-align: center
+	&:before
+		content: "";
+		overflow: hidden
+		display: inline-block
+		vertical-align: middle
+		width: 269px
+		height: 2px
+		background: #001D26
+		border: solid #001D26
+		border-width: 0 10px
+		margin-left: -292px
+		margin-right: 20px
+	&:after
+		content: "";
+		overflow: hidden
+		display: inline-block
+		vertical-align: middle
+		width: 269px
+		height: 2px
+		background:#001D26
+		border: solid #001D26
+		border-width: 0 10px
+		margin-right: -292px
+		margin-left: 20px	
+.subtitle
+	margin: 0 auto
+	font-size: 21px
+	text-align: center
+	margin-bottom: 17px
+	/* ---contents--- */			
+header
+	position: relative
+	min-height:
+.contact
+	position: absolute
+	top: 50px
+	width: 100%
+	min-height: 37px
+	background-color: rgba(27,40,49, 0.7)
+	z-index: 1
+	&_addr
+		padding-top: 10px
+		font-size: 13px
+		color: $color_white
+	&_info
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		font-size: 13px
+		padding-top: 7px
+	&_map
+		display: block
+		color: $color_white	
+		@include link_hover			
+	&_call
+		color: $color_cherry
+		padding-right: 17px
+		font-weight: 700
+	&_phone
+		font-family: 'Lobster', cursive
+		color: $color_white
+		font-size: 17px
+		@include link_hover			
+nav
+	position: fixed
+	width: 100%
+	min-height: 50px
+	background-color: rgba(101,0,100, 0.7)
+	z-index: 2	 
+.cake
+	display: none	
+.menu
+	display: flex
+	justify-content: space-around
+	align-items: center
+	list-style-type: none
+	padding: 10px 47px
+	margin: 0
+	border-radius: 25px
+	&_link
+		font-size: 18px
+		font-weight: 700
+		color: rgb(209,211,207)
+		@include link_hover
+.promo
+	min-height: 100vh
+	padding: 17px 27px
+	background: url(../image/logo_bg/promo.jpg) center (center / cover) no-repeat
+	&_logo
+		padding-top: 93px
+		width: 100px
+		&:hover
+			opacity: 0.7	
+	&_header
+		padding-top: 223px
+		font-size: 42px
+		text-align: center
+		color: $color_white
+		opacity: 0.8
+	&_subheader
+		color: $color_white
+		font-size: 23px
+		text-align: center
+		opacity: 0.6
+.info
+	position: relative
+	min-height: 590px
+	padding: 13px 27px
+	background-color: #F5F5F5
+	&_text
+		margin-top: 37px
+		color: rgb(24,24,24)
+		text-align: center
+		font-size: 27px
+		font-weight: 400
+		padding: 8px 17px
+		border-radius: 27px
+		line-height: 46px
+		span
+			font-weight: 700				
+	&_foto
+		position: absolute
+		width: 270px
+		border-radius: 45px
+					
+.video
+	min-height: 490px
+	padding: 17px 13px
+	background: 	
+	&_dance
+		width: 532px
+		padding: 10px 0
+.carousel
+	min-height: 600px
+	padding: 13px 21px
+	background-color: rgb(255,255,255)
+	&_inner 
+		position: relative
+		width: 610px
+		margin:	0 auto
+		img
+			width: 100%
+			height: 420px	   
+.slick-prev, .slick-next  
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: -66px
+        border: none
+        background-color: #fff
+        img 
+        	width: 31px
+        	height: 80px
+.slick-next  
+        right: -66px
+        left: auto
+    			
+.timetable
+	min-height: 590px
+	padding: 31px 27px
+	background-color: rgb(240,237,231)
+	&_wrapper
+		display: flex
+		flex-wrap: wrap
+	&_title
+		font-weight: 700
+ul
+	list-style-type: none
+.subscription
+	min-height: 510px
+	padding: 23px 27px
+	background-color: #F9FDFF
+	span
+		font-weight: 700
+	&_footnote
+		
+footer
+	min-height: 137px
+	padding: 10px 17px
+	background-color: $color_white 
+.footer
+	&_divider
+		width: 410px
+		height: 3px
+		margin: 0 auto
+		background-color: #000
+	&_wrapper
+		display: flex 
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 32px
+	&_wrapper > div 
+		width: 33%
+		&:nth-child(3)
+			display: flex 
+			justify-content: flex-end	
+	&_social
+		width: 160px
+		display: flex
+		justify-content: space-between 
+		&_item
+			display: flex				
+			justify-content: center
+			align-items: center
+			margin: 0 4px 
+			width: 33px
+			height: 33px
+			background-color: $color_cherry
+			border-radius: 100%
+			text-decoration: none
+			&:hover 
+				text-decoration: none
+			i
+				color: #fff				
+	&_links	
+		display: flex
+		justify-content: space-around
+		width: 390px
+		margin: 0 auto		
+	&_btn 	
+		display: block
+		margin: 0 auto
+		text-align: center
+		padding: 6px 0
+		width: 136px
+		height: 37px
+		background-color: $color_cherry
+		border: none
+		border-radius: 9px
+		margin: 19px 0
+		color: $color_white
+		@include link_hover
+	&_contacts
+		text-align: center 
+		span
+			font-weight: 700
+			font-size: 20px
+			color: $color_cherry 
+				
