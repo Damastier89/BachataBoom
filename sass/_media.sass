@@ -62,3 +62,117 @@
 				width: 100%
 				justify-content: center
 				order: 1			
+
+@media (max-width: 767px)
+	.title
+		margin: 0 auto
+		margin-top: 26px
+		font-size: 19px
+		text-align: center
+		&:before
+			content: "";
+			overflow: hidden
+			display: inline-block
+			vertical-align: middle
+			width: 192px
+			height: 2px
+			background: #001D26
+			border: solid #001D26
+			border-width: 0 10px
+			margin-left: -172px
+			margin-right: 20px
+		&:after
+			content: "";
+			overflow: hidden
+			display: inline-block
+			vertical-align: middle
+			width: 192px
+			height: 2px
+			background:#001D26
+			border: solid #001D26
+			border-width: 0 10px
+			margin-right: -172px
+			margin-left: 20px
+	.subtitle
+		margin: 0 auto
+		font-size: 15px
+		text-align: center
+		margin-bottom: 17px	
+	.contact
+		top: 42px
+	.menu
+		position: fixed
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		top: 0
+		left: -100%
+		width: 50%
+		height: 100vh
+		padding: 20px 10px
+		background-color: rgba(0,0,0, .8)
+		transition: 0.7s all
+		&_active
+			left: 0
+		&_item
+			padding-right: 0
+			border-right: none
+			margin: 17px 0
+		&_link
+			font-size: 21px
+	.contact
+		&_addr
+			font-size: 17px
+			text-align: center
+			color: #ffffff
+			text-transform: uppercase
+			font-weight: 400
+		&_call
+			display: block
+			margin: 0 auto
+			width: 190px
+  			height: 37px
+		&_phone
+			margin: auto	  					
+	.hamburger
+		display: block
+		position: absolute
+		right: 10px
+		top: 50%
+		transform: translateY(-50%)
+		width: 25px
+		height: 12px
+		span
+			display: block
+			height: 2px
+			width: 100%
+			background-color: #fff
+			margin-bottom: 5px
+			transition: 0.5s all
+		&_active
+			span
+				margin-bottom: -2px
+				&:nth-child(1)
+					transform: translateY(3px) rotate(-45deg)
+				&:nth-child(2)
+					display: none	
+				&:nth-child(3)
+					transform: translateY(3px) rotate(45deg)
+	.promo
+		&_logo
+			display: none
+		&_header
+			font-size: 19px
+			padding-top: 300px
+		&_subheader
+			font-size: 14px		
+	.info
+		min-height: 467px
+		&_text
+			margin-top: 5px
+			font-size: 14px
+			text-align: left 
+		&_foto
+			width: 204px
+			
+
