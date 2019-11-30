@@ -181,6 +181,53 @@
 		&_inner
 			img
 				width: 85%
-				height: 339px				
+				height: 339px
+
+@media (max-width: 575px) 
+	.title
+		margin: 0 auto
+		margin-top: 26px
+		font-size: 18px
+		text-align: center
+		&:before
+			content: "";
+			overflow: hidden
+			display: inline-block
+			vertical-align: middle
+			width: 145px
+			height: 2px
+			background: #001D26
+			border: solid #001D26
+			border-width: 0 10px
+			margin-left: -145px
+			margin-right: 20px
+		&:after
+			content: "";
+			overflow: hidden
+			display: inline-block
+			vertical-align: middle
+			width: 145px
+			height: 2px
+			background:#001D26
+			border: solid #001D26
+			border-width: 0 10px
+			margin-right: -145px
+			margin-left: 20px
+	.subtitle
+		margin: 0 auto
+		font-size: 14px
+		text-align: center
+		margin-bottom: 17px
+	.promo
+		&_header
+			font-size: 18px
+		&_subheader
+			font-size: 13px
+	.info
+		min-height: 651px		
+	.x_hidden
+		display: none
+
+
 			
 
