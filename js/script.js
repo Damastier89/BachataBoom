@@ -13,13 +13,7 @@ $(document).ready(function(){
                     dots: false,
                     arrows: false,
                 }
-            },
-            {   breakpoint:575,
-                settings: {
-                    dots: false,
-                    arrows: false,
-                }
-            }
+            }   
         ]
     });    
 });
