@@ -4,6 +4,7 @@ $(document).ready(function(){
         adaptiveHeight: true,
         autoplay: true,
         autoplaySpeed: 3000,
+        /* mobileFirst: Boolean, */
         prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-angle-double-left"></i></button>',
         nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-double-right"></i></button>',
         responsive: [
