@@ -10,6 +10,30 @@
 @media (max-width: 991px)
 	.title
 		font-size: 25px
+		&:before
+			content: "";
+			overflow: hidden
+			display: inline-block
+			vertical-align: middle
+			width: 194px
+			height: 2px
+			background: #001D26
+			border: solid #001D26
+			border-width: 0 10px
+			margin-left: -172px
+			margin-right: 20px
+		&:after
+			content: "";
+			overflow: hidden
+			display: inline-block
+			vertical-align: middle
+			width: 194px
+			height: 2px
+			background:#001D26
+			border: solid #001D26
+			border-width: 0 10px
+			margin-right: -172px
+			margin-left: 20px
 	.suptitle
 		font-size: 19px
 	nav
@@ -33,7 +57,7 @@
 			font-size: 16px
 			line-height: 40px
 		&_foto
-			width: 230px
+			width: 175px
 	.video
 		&_dance
 			width: 438px
